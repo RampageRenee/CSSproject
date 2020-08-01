@@ -1,0 +1,202 @@
+
+/* Globaal
+---------------------------------- */
+html {
+    box-sizing: border-box;
+}
+*, *:before *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #501B5A;
+    margin: 0;
+    padding: 0;
+    font-family: itc-slimbach, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 1.5;
+}
+img {
+    width: 300px;
+}
+a {
+    color: #665C1D;
+}
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: fino-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+h1 {
+    font-size: 110px;
+    
+}
+h2 {
+    margin: 0;
+    font-size: 38px;
+}
+
+.inhoud-omhuller {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px;
+}
+h3 {
+    margin-bottom: 0;
+}
+
+.text-details h3 + p {
+    font-style: italic;
+}
+.text-details h3 ~ p {
+    margin: 0;
+}
+
+.divider > section{
+    border-bottom: dotted 3px #665C1D ;
+    padding: 25px 0;
+}
+
+.divider > section:last-of-type{
+    border-bottom: none;
+}
+/* Profile
+---------------------------------- */
+header {
+    background-color: #665C1D;
+}
+.renee {
+    font-weight: 300;
+}
+
+/* Projects
+---------------------------------- */
+
+.projects{
+    background-color: #1F8A7A;
+}
+
+
+
+.projects .btn {
+    background-color: #E0CBA8;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.projects a:hover{
+    background-color: rgba(224,203,168,80%);
+}
+
+.project-titel{
+    font-family: fino-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.project-item{
+    overflow: hidden;
+    
+}
+
+
+
+
+.project-item h3 {
+    margin-top: 0;
+}
+/* Work experience
+---------------------------------- */
+.work-experience {
+    background-color: #1E7E6F;
+}
+
+
+/* Education
+---------------------------------- */
+.education{
+    background-image: url(../afbeeldingen/mona-eendra-vC8wj_Kphak-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding-bottom: 130px;
+}
+.education p{
+    width: 55%;
+}
+
+
+
+
+/* Contact
+---------------------------------- */
+footer {
+   background-color: #1E7265;
+}
+footer a{
+    color: #E0CBA8;
+    text-decoration: none;
+}
+.contact-lijst{
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.contact-lijst a{
+    padding: 20px;
+    display: inline-block;
+}
+
+/* Responsive
+---------------------------------- */
+@media screen and (min-width: 910px){
+    
+    .project-item img{
+        float: left;
+        margin-right: 40px;
+    }
+    .job-item{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .inhoud-omhuller{
+        width: 80%;
+    }
+    
+}
+
+@media screen and (max-width: 909px){
+    h1 {
+        font-size: 85px;
+        line-height: 0.8;
+        margin-bottom: 15px;
+    }
+    
+}
+
+/* I-pad fijnstelling
+---------------------------------- */
+@media screen and (min-width: 765px){
+    header, footer {   
+        text-align: center;
+    }
+    .contact-lijst{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 764px){
+    .contact-lijst a{
+        padding: 5px;
+    }
+}
